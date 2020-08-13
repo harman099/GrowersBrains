@@ -3,7 +3,7 @@ import {
   Route,
   Switch,
   Redirect,
-  BrowserRouter as Router
+  BrowserRouter as Router,
 } from 'react-router-dom';
 
 import Landing from './screens/Landing';
@@ -22,8 +22,8 @@ const privateRouteProps = [
   { path: '/products', component: Products },
   { path: '/dailygrow', component: DailyGrow },
   { path: '/consulting', component: Consulting },
-  { path: '/greenhouse', component: GreenHouse }
-]
+  { path: '/greenhouse', component: GreenHouse },
+];
 
 function App() {
   return (

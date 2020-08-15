@@ -32,11 +32,11 @@ function App() {
 				{privateRouteProps.map((props) => (
 					<ProtectedRoute {...props} key={props.path} />
 				))}
-				<Route exact path="/signup" component={SignUp} />
-				<Route exact path="/login" component={Login} />
-				<Route exact path="/" component={Landing} />
+				<Route exact path='/signup' component={SignUp} />
+				<Route exact path='/login' component={Login} />
+				<Route exact path='/' component={Landing} />
 				{/* If there are no route matches... */}
-				<Redirect to="/" />
+				<Redirect to='/' />
 			</Switch>
 		</Router>
 	);
